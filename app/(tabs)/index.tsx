@@ -1,5 +1,5 @@
 import { Image, StyleSheet, Platform } from "react-native";
-
+import { Text, View } from "react-native";
 import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
@@ -16,10 +16,11 @@ export default function HomeScreen() {
         />
       }
     >
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title" className="!text-sm !text-red-500">
+      <ThemedView style={styles.titleContainer} className='flex-wrap'>
+        <ThemedText type="title" className="!text-red-500">
           Welcome!
         </ThemedText>
+        <Text className="text-red-500 text-2xl font bold"> Nativewind works </Text>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
