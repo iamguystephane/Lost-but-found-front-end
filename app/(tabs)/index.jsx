@@ -10,14 +10,14 @@ export const metadata = {
   description: "Welcome to the homepage of Losti",
 };
 
-const FindItem = () => {
+const HomePage = () => {
   const { colorScheme, theme } = useContext(themeContext);
   return (
     <ThemedView>
       <SafeAreaView>
         <ScrollView>
           <ThemedView className="flex items-center justify-center !min-h-screen">
-            <ThemedText> Find items </ThemedText>
+            <ThemedText> Hello world! </ThemedText>
           </ThemedView>
         </ScrollView>
       </SafeAreaView>
@@ -25,4 +25,4 @@ const FindItem = () => {
   );
 };
 
-export default FindItem;
+export default HomePage;
